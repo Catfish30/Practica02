@@ -39,6 +39,5 @@ main{
 #scream{
     background-color:var(--color-secundario) ;
     padding: 20px;
-    
     border-radius: 15px;
 }
