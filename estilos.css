@@ -13,9 +13,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--color-primario);
 }
 :root{
-    --color-primario: hsl(172, 67%, 45%);
+    --color-primario: hsl(185, 41%, 84%);
     --color-secundario:hsl(183, 100%, 15%);
     --color-terceario:hsl(186, 14%, 43%);
     --color-c:hsl(184, 14%, 56%);
@@ -26,9 +27,18 @@ main{
     width: auto;
     height: auto;
     /* margin: 50vh 50vh; */ 
+    background-color:white;
+    padding: 25px;
+    border-radius: 15px;
 }
 
 .tip{
     display: flex;
     flex-direction: row;
+}
+#scream{
+    background-color:var(--color-secundario) ;
+    padding: 20px;
+    
+    border-radius: 15px;
 }
