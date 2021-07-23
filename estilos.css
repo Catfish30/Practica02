@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
-    /* border: 1px solid red; */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
@@ -26,18 +25,107 @@ main{
     display: flex;
     width: auto;
     height: auto;
-    /* margin: 50vh 50vh; */ 
     background-color:white;
-    padding: 25px;
+    padding: 10px;
     border-radius: 15px;
 }
 
 .tip{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 30px;
+    padding-right: 50px;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
 }
 #scream{
+    display: flex;
+    flex-direction: column;
     background-color:var(--color-secundario) ;
-    padding: 20px;
     border-radius: 15px;
+    margin:10px;
+    
+}
+
+.tips{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(30px,65px));
+    grid-template-rows: 25px 25px;
+    gap: 8px;
+}
+#calculator h4{
+    margin-bottom: 10px;
+    color:hsl(177, 8%, 45%);
+    font-size: 10px;
+
+}
+
+#scream h4{
+    color: white;
+    font-size: 10px;
+}
+p{
+    color:hsl(177, 8%, 45%);
+    font-size: 10px;
+}
+span{
+    color: hsl(172, 68%, 45%);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.reset{
+    margin: auto;
+    margin-bottom: 15px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(172, 68%, 45%);
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    border-style: none;
+    border-color: white;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    margin-top: 70px;
+}
+#calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#calculator button{
+    
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+    border-style: none;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    background-color: hsl(202, 50%, 97%);
+    border-radius: 5px;
+    border-style:solid;
+    border-color: white;
+}
+input:hover{
+    border-color:hsl(172, 30%, 50%) ;
+}
+button:hover{
+    background-color: hsl(173, 61%, 77%);
+    color: hsl(180, 85%, 13%);
+}
+#calculator button:hover{
+    background-color: hsl(173, 61%, 77%);
+    color: hsl(180, 85%, 13%);
 }
