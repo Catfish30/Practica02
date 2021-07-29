@@ -8,26 +8,26 @@
     <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
-    <main>
+    <main id="form">
         <div id="calculator">
             <div>
                 <h4>Bill</h4>
-                <input type="text" name="factura" placeholder="0">
+                <input type="number" id="cuenta" name="factura" placeholder="0">
             </div>
             <div>
                 <h4>Select Tip %</h4>
                 <div class="tips">
-                    <button>5%</button>
-                    <button>10%</button>
-                    <button>15%</button>
-                    <button>25%</button>
-                    <button>50%</button>
-                    <input type="text" name="otro" placeholder="Custom">
+                    <button class="tipo" tip="0.05">5%</button>
+                    <button class="tipo" tip="0.1">10%</button>
+                    <button class="tipo" tip="0.15">15%</button>
+                    <button class="tipo" tip="0.25">25%</button>
+                    <button class="tipo" tip="0.5">50%</button>
+                    <input id="t6" type="number" name="otro" placeholder="Custom">
                 </div>
             </div>
             <div>
                 <h4>Number of People</h4>
-                <input type="text" name="personas" placeholder="0">
+                <input type="number" id="personas" name="personas" placeholder="0">
             </div>
         </div>
 
@@ -37,16 +37,16 @@
                     <h4>Tip Amount</h4>
                     <p>/ person</p>
                 </div>
-                <span id="solo">$0.00</span>
+                <span id="solo">$ 0.00</span>
             </div>
             <div class="tip">
                 <div>
                 <h4>Total</h4>
                 <p>/ person</p>
                 </div>
-                <span id="total">$0.00</span>
+                <span id="total">$ 0.00</span>
             </div>
-            <button type="reset" class="reset">
+            <button type="reset" class="reset" id="reset">
                 RESET
             </button>
         </div>
