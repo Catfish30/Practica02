@@ -129,3 +129,17 @@ button:hover{
     background-color: hsl(173, 61%, 77%);
     color: hsl(180, 85%, 13%);
 }
+
+@media screen and (max-width:375px) {
+    
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#calculator{
+    justify-content: center;
+    margin: 20px;
+}
+
+}
